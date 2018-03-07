@@ -1,0 +1,86 @@
+.container {
+    border: 1px solid;
+    box-shadow: 0 0 5px 2px;
+    background-color: rgb(15, 6, 54);
+    color: azure;
+    border-radius: 25px;
+    width: 35em;
+    height: 25em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+}
+
+.song-title {
+    text-align: center;
+    padding-top: 50px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+}
+.nextSongTitle{
+    width: 100%;
+    float: left;
+    margin: 50px;
+}
+
+.song-slider {
+  
+   margin: 0 auto;
+    width: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    margin-top:100px;
+}
+
+.current-time {
+    float: left;
+    font-size: 12px;
+}
+
+.duration {
+    float: right;
+    font-size: 12px;
+}
+
+img.bild {
+
+    float: left;
+    width: 100px;
+}
+.controllers{
+    float: left;
+    padding-top:150px;
+    padding-left: 50px;
+   
+}
+
+body {
+
+    height: 100%;
+    /* задаем произвольную высоту и ширину блока */
+    width: 100%;
+    background-image: url('bilder/fon4.jpg');
+    background-repeat: none;
+    animation: animatedBackground 60s linear infinite;
+    -moz-animation: animatedBackground 60s linear infinite;
+    -webkit-animation: animatedBackground 60s linear infinite;
+    -o-animation: animatedBackground 60s linear infinite;
+    /* так же, как и с @keyframes, префикс -ms тут ни к чему */
+}
+
+@keyframes animatedBackground {
+    0% {
+        background-position: 0 0
+    }
+    100% {
+        background-position: -600px 600px/* анимируем свойство background-position */
+    }
+}

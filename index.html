@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Custom Audio Player in JS</title>
+   <link rel ="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div id="fon">
+        <div class="container">
+            <div class="logo">
+                <img class="bild" src="bilder\bild1.png">
+            </div>
+            <div class="player">
+                <div id="songTitle1" class="song-title">
+                    <marquee behavior="scroll" direction="left" id="songTitle" >My songstitle</marquee>
+                </div>
+                
+                <div class="controllers">
+                        <img src="bilder\backward.png" width="50x" onclick="previousSong()">
+                        <img src="bilder\pause.png" width="50px" onclick="pauseSong()">
+                        <img src="bilder\play.png" width="50px" onclick="loadSong()">
+                        <img src="bilder\stop.png" width="50px" onclick="stopSong()">
+                        <img src="bilder\next.png" width="50px" onclick="nextSong()">
+                       
+                    </div>
+                
+                <div id="currentTime" class="current-time">Time is</div>
+                <div id="duration" class="duration">00:00</div>
+                <input id="songSlider" class="song-slider" type="range" min="0" step="1" onchange="adjustVolume()" />
+                <div  id="nextSong" class="nextSongTitle">Next song</div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<script type="text/javascript" src="app.js"></script>
+</body>
+
+
+
+
+</html>
